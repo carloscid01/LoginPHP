@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 		$errores.='<li>Por favor rellena los datos Correctamente</li>';
 	}else{
 		try {
-			$conexion=new PDO('mysql:host=localhost;dbname=curso','root','');
+			$conexion=new PDO('mysql:host=localhost;dbname=curso','root','Carloscid_azul!');
 		} catch (PDOException $e) {
 			echo "Error".$e->getMessage();
 			
